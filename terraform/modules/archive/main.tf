@@ -3,7 +3,7 @@ data "archive_file" "placeholder" {
   output_path = "${path.module}/lambda-function-payload.zip"
 
   source {
-    content = "placeholder"
+    content  = "placeholder"
     filename = "placeholder.txt"
   }
 }
