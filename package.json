@@ -1,0 +1,30 @@
+{
+  "name": "express-like-lambda-example",
+  "version": "1.0.0",
+  "description": "A dead simple Express-like Lambda hello world example",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build": "npm install --production && rm -rf build && mkdir build && zip -r -q -x='*media*' -x='*terraform*' -x=*coverage* -x='*.md' -x='LICENSE' -x='*build*' -x='*.DS_Store*' -x='*.git*' build/express-like-lambda-example.zip . && du -sh build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cujarrett/express-like-lambda-example.git"
+  },
+  "keywords": [
+    "Lambda",
+    "AWS",
+    "Express",
+    "API",
+    "REST"
+  ],
+  "author": "cujarrett",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cujarrett/express-like-lambda-example/issues"
+  },
+  "homepage": "https://github.com/cujarrett/express-like-lambda-example#readme",
+  "dependencies": {
+    "lambda-api": "~0.10.6"
+  }
+}
